@@ -9,6 +9,7 @@ import './styles/app.scss';
 //importing components
 import Player from './components/Player';
 import Song from './components/Song';
+import Library from './components/Library';
 
 function App() {
   //state
@@ -23,7 +24,7 @@ const [isPlaying, setIsPlaying] =useState(false);
         isPlaying={isPlaying} 
         setIsPlaying ={setIsPlaying} 
         currentSong={currentSong}/>
-      
+      <Library songs ={songs}/>
     </div>
   );
 }
