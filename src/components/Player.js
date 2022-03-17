@@ -1,10 +1,13 @@
 import React,{useEffect} from "react";
+import { playAudio } from "../util";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { 
     faPlay,
     faPause,
     faAngleLeft, 
     faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
+
 
 const Player =({setSongs, currentSong,songInfo,setSongInfo,songs, setCurrentSong,isPlaying, setIsPlaying, audioRef}) =>{
    
@@ -54,10 +57,12 @@ const skipTrackHandler =(direction) =>{
     }else{
         if((currentIndex -1 ) % songs.length === -1){
             setCurrentSong(songs[songs.length-1]);
+            playAudio(isPlaying,audioRef);
             return;
         }
         setCurrentSong(songs[(currentIndex - 1) % songs.length])
     }
+    playAudio(isPlaying,audioRef);
 }
 
 return(
@@ -70,7 +75,7 @@ return(
             value={songInfo.currentTime}
             max={songInfo.duration || 0 } 
             type='range' />
-            <p>{getTime(songInfo.duration)}</p>
+            <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>
         </div>
 
         <div className="play-control">
