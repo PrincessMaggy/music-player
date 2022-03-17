@@ -38,6 +38,7 @@ This is webpage that contains a music library and functions effectively.
 ### What I learned
 - I got better understanding of how state and ref works in react.
 - I also learnt how to pull out data from a local api and use in react library.
+- I learnt more about destructuring. Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables. 
 
 
 ### Useful resources
