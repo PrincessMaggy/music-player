@@ -21,8 +21,8 @@ const [isPlaying, setIsPlaying] =useState(false);
       <Song 
         currentSong ={currentSong}/>
       <Player 
-        isPlaying={isPlaying} 
-        setIsPlaying ={setIsPlaying} 
+      setIsPlaying ={setIsPlaying}
+        isPlaying={isPlaying}  
         currentSong={currentSong}/>
       <Library songs ={songs}/>
     </div>
