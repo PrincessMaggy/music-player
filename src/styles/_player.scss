@@ -8,9 +8,11 @@
 .time-control{
     width: 50%;
     display: flex;
+    align-items: center;
     input{
         width: 100%;
         padding: 1rem 0;
+        cursor: pointer;
     }
     p{
         padding: 1rem;
