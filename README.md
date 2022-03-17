@@ -15,7 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is webpage that contains a music library and functions effectively.
 ### Screenshot
 
-![screenshot](./screenshot.jpg)
+![screenshot](./screenshot.png)
 
 ### Links
 
