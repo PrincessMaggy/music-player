@@ -39,7 +39,7 @@ return(
             min={0}
             onChange={dragHandler} 
             value={songInfo.currentTime}
-            max={songInfo.duration} 
+            max={songInfo.duration || 0 } 
             type='range' />
             <p>{getTime(songInfo.duration)}</p>
         </div>
